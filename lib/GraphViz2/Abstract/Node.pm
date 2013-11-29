@@ -17,6 +17,8 @@ use constant EMPTY_STRING => q[];
 use constant UNKNOWN      => \q[unknown];
 use constant NONE         => \q[none];
 
+our @CARP_NOT;
+
 
 use Class::Tiny {
   area          => 1.0,
@@ -103,8 +105,7 @@ sub _foreach_attr {
   my ( $self, $callback ) = @_;
   if ( not blessed($self) ) {
     require Carp;
-    local @CARP_NOT;
-    @CARP_NOT = 'GraphViz2::Abstract::Node';
+    local @CARP_NOT = 'GraphViz2::Abstract::Node';
     Carp::croak('Can\'t call as_hash on a class');
   }
   my $class    = blessed($self);
