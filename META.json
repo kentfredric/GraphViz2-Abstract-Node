@@ -83,6 +83,7 @@
       },
       "runtime" : {
          "requires" : {
+            "Carp" : "0",
             "Class::Tiny" : "0",
             "Scalar::Util" : "0",
             "constant" : "0",
@@ -123,6 +124,7 @@
    "version" : "0.001000",
    "x_BuiltWith" : {
       "modules" : {
+         "Carp" : "1.32",
          "Class::Tiny" : "0.014",
          "Dist::Zilla::Plugin::Author::KENTNL::MinimumPerl" : "2.004001",
          "Dist::Zilla::Plugin::Authority" : "1.006",

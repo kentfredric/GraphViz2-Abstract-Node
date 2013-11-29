@@ -48,6 +48,7 @@ sub pmver {
     return sprintf('%-45s => %-10s%-15s%s', $module, $pmver, $wanted, "\n");
 }
 
+eval { $v .= pmver('Carp','any version') };
 eval { $v .= pmver('Class::Tiny','any version') };
 eval { $v .= pmver('GraphViz2','any version') };
 eval { $v .= pmver('Module::Build','0.4203') };

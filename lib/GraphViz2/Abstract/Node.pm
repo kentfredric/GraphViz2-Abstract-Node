@@ -36,8 +36,8 @@ use Class::Tiny {
   id            => EMPTY_STRING,
   image         => EMPTY_STRING,
   imagescale    => FALSE,
-  label         => '\N',
-  labelloc      => "c",
+  label         => q[\\N],
+  labelloc      => q[c],
   layer         => EMPTY_STRING,
   margin        => UNKNOWN,
   nojustify     => FALSE,
@@ -102,7 +102,9 @@ sub _is_magic {
 sub _foreach_attr {
   my ( $self, $callback ) = @_;
   if ( not blessed($self) ) {
-    die "Can't call as_hash on a class";
+    require Carp;
+    local @CARP_NOT = 'GraphViz2::Abstract::Node';
+    Carp::croak('Can\'t call as_hash on a class');
   }
   my $class    = blessed($self);
   my @attrs    = Class::Tiny->get_all_attributes_for($class);
@@ -116,7 +118,7 @@ sub _foreach_attr {
     }
     $callback->( $attr, $value, $has_default, $default );
   }
-
+  return $self;
 }
 
 
@@ -430,7 +432,7 @@ Where the specification shows C<false> as a default value, this module instead r
 
 This is because under the hood, GraphViz2 doesn't support values for attributes other than defined ones.
 
-So its assumed that graphviz, under the hood, interprets the string "false" the same as the boolean condition "false";
+So its assumed that GraphViz, under the hood, interprets the string "false" the same as the boolean condition "false";
 
 =item * C<NONE>
 
@@ -450,7 +452,7 @@ For instance:
     is( ref $v, 'SCALAR', 'target returned a scalar ref' );
     is( ${ $v }, 'none', 'target returned a scalar ref of "none"' );
 
-However, because its not known how to canonicalise such forms, those values are presently not returned by either C<as_hash> methods.
+However, because its not known how to canonicalize such forms, those values are presently not returned by either C<as_hash> methods.
 
 So as a result:
 

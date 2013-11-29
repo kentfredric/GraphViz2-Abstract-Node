@@ -218,7 +218,7 @@ SPECIAL VALUES
         This is because under the hood, GraphViz2 doesn't support values for
         attributes other than defined ones.
 
-        So its assumed that graphviz, under the hood, interprets the string
+        So its assumed that GraphViz, under the hood, interprets the string
         "false" the same as the boolean condition "false";
 
     *   "NONE"
@@ -241,7 +241,7 @@ SPECIAL VALUES
             is( ref $v, 'SCALAR', 'target returned a scalar ref' );
             is( ${ $v }, 'none', 'target returned a scalar ref of "none"' );
 
-        However, because its not known how to canonicalise such forms, those
+        However, because its not known how to canonicalize such forms, those
         values are presently not returned by either "as_hash" methods.
 
         So as a result:
@@ -284,6 +284,6 @@ POD ERRORS
     Hey! The above document had some coding errors, which are explained
     below:
 
-    Around line 467:
+    Around line 469:
         Expected '=item *'
 
