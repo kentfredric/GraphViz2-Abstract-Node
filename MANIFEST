@@ -1,5 +1,9 @@
+.gitignore
 .perltidyrc
 .travis.yml
+.travis_early_installdeps.build_master
+.travis_early_installdeps.master
+.travis_early_installdeps.releases
 Build.PL
 Changes
 LICENSE

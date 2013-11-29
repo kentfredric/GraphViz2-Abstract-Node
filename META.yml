@@ -40,7 +40,7 @@ x_BuiltWith:
   modules:
     Carp: 1.32
     Class::Tiny: 0.014
-    Dist::Zilla::Plugin::Author::KENTNL::MinimumPerl: 2.004001
+    Dist::Zilla::Plugin::Author::KENTNL::MinimumPerl: 2.005000
     Dist::Zilla::Plugin::Authority: 1.006
     Dist::Zilla::Plugin::AutoPrereqs: 5.006
     Dist::Zilla::Plugin::CheckExtraTests: 0.016
@@ -69,8 +69,7 @@ x_BuiltWith:
     Dist::Zilla::Plugin::PodSyntaxTests: 5.006
     Dist::Zilla::Plugin::PodWeaver: 4.002
     Dist::Zilla::Plugin::Prereqs: 5.006
-    Dist::Zilla::Plugin::Prereqs::MatchInstalled: 0.1.5
-    Dist::Zilla::Plugin::PruneCruft: 5.006
+    Dist::Zilla::Plugin::Prereqs::MatchInstalled: 0.1.6
     Dist::Zilla::Plugin::ReadmeAnyFromPod: 0.133290
     Dist::Zilla::Plugin::ReadmeFromPod: 0.21
     Dist::Zilla::Plugin::ReportVersions::Tiny: 1.10
@@ -82,7 +81,7 @@ x_BuiltWith:
     Dist::Zilla::Plugin::TestRelease: 5.006
     Dist::Zilla::Plugin::Twitter: 0.024
     Dist::Zilla::Plugin::UploadToCPAN: 5.006
-    Dist::Zilla::PluginBundle::Author::KENTNL: 2.004001
+    Dist::Zilla::PluginBundle::Author::KENTNL: 2.005000
     Dist::Zilla::PluginBundle::Author::KENTNL::Lite: 1.7.2
     GraphViz2: 2.22
     Module::Build: 0.4203
@@ -232,10 +231,6 @@ x_Dist_Zilla:
       name: '@Author::KENTNL/Test::Perl::Critic'
       version: 2.112410
     -
-      class: Dist::Zilla::Plugin::PruneCruft
-      name: '@Author::KENTNL/PruneCruft'
-      version: 5.006
-    -
       class: Dist::Zilla::Plugin::ManifestSkip
       name: '@Author::KENTNL/ManifestSkip'
       version: 5.006
@@ -348,7 +343,7 @@ x_Dist_Zilla:
     -
       class: Dist::Zilla::Plugin::Author::KENTNL::MinimumPerl
       name: '@Author::KENTNL/Author::KENTNL::MinimumPerl'
-      version: 2.004001
+      version: 2.005000
     -
       class: Dist::Zilla::Plugin::Authority
       name: '@Author::KENTNL/Authority'
@@ -444,7 +439,7 @@ x_Dist_Zilla:
             - Test::More
             - Dist::Zilla::PluginBundle::Author::KENTNL
       name: '@Author::KENTNL/Prereqs::MatchInstalled'
-      version: 0.1.5
+      version: 0.1.6
     -
       class: Dist::Zilla::Plugin::Prereqs
       config:
