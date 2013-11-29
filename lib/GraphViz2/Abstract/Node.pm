@@ -103,7 +103,8 @@ sub _foreach_attr {
   my ( $self, $callback ) = @_;
   if ( not blessed($self) ) {
     require Carp;
-    local @CARP_NOT = 'GraphViz2::Abstract::Node';
+    local @CARP_NOT;
+    @CARP_NOT = 'GraphViz2::Abstract::Node';
     Carp::croak('Can\'t call as_hash on a class');
   }
   my $class    = blessed($self);
@@ -466,7 +467,7 @@ Also:
 
 Will not emit a value for C<color> in its output, which may have the undesirable effect of reverting to the default, C<black> once rendered.
 
-=item C<UNKNOWN>
+=item * C<UNKNOWN>
 
 On the GraphViz documentations, there were quite a few fields where the defaults were simply not specified,
 or their values were cryptic.
