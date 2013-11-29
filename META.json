@@ -1,5 +1,5 @@
 {
-   "abstract" : "Deal with nodes indepdendent of a Graph",
+   "abstract" : "Deal with nodes independent of a Graph",
    "author" : [
       "Kent Fredric <kentfredric@gmail.com>"
    ],
@@ -109,6 +109,17 @@
       }
    },
    "release_status" : "stable",
+   "resources" : {
+      "bugtracker" : {
+         "web" : "https://github.com/kentfredric/GraphViz2-Abstract-Node/issues"
+      },
+      "homepage" : "https://github.com/kentfredric/GraphViz2-Abstract-Node",
+      "repository" : {
+         "type" : "git",
+         "url" : "https://github.com/kentfredric/GraphViz2-Abstract-Node.git",
+         "web" : "https://github.com/kentfredric/GraphViz2-Abstract-Node"
+      }
+   },
    "version" : "0.001000",
    "x_BuiltWith" : {
       "modules" : {

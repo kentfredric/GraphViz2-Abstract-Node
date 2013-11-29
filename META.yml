@@ -1,5 +1,5 @@
 ---
-abstract: 'Deal with nodes indepdendent of a Graph'
+abstract: 'Deal with nodes independent of a Graph'
 author:
   - 'Kent Fredric <kentfredric@gmail.com>'
 build_requires:
@@ -30,6 +30,10 @@ requires:
   strict: 0
   utf8: 0
   warnings: 0
+resources:
+  bugtracker: https://github.com/kentfredric/GraphViz2-Abstract-Node/issues
+  homepage: https://github.com/kentfredric/GraphViz2-Abstract-Node
+  repository: https://github.com/kentfredric/GraphViz2-Abstract-Node.git
 version: 0.001000
 x_BuiltWith:
   modules:

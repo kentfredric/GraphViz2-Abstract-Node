@@ -1,5 +1,5 @@
 NAME
-    GraphViz2::Abstract::Node - Deal with nodes indepdendent of a Graph
+    GraphViz2::Abstract::Node - Deal with nodes independent of a Graph
 
 VERSION
     version 0.001000
@@ -17,7 +17,7 @@ SYNOPSIS
 
         $node->label("Asdft");
 
-        my $fillcolor = $node->fillcolor(); # Knows that the fill colour is light grey despite never setting it.
+        my $fillcolor = $node->fillcolor(); # Knows that the fill color is light grey despite never setting it.
 
         # Later:
 
@@ -53,7 +53,7 @@ METHODS
 
         Node->new( color => 'black' )->as_hash();
 
-    Will return an empty list, as the default colour is normally black.
+    Will return an empty list, as the default color is normally black.
 
     See note about "Special Values"
 
@@ -71,138 +71,138 @@ METHODS
     See note about "Special Values"
 
 ATTRIBUTES
-  area
+  "area"
     Default: 1.0
 
-  color
+  "color"
     Default: "black"
 
-  colorscheme
+  "colorscheme"
     Default: ""
 
-  comment
+  "comment"
     Default: ""
 
-  distortion
+  "distortion"
     Default: 0.0
 
-  fillcolor
+  "fillcolor"
     Default: "lightgrey"
 
-  fixedsize
+  "fixedsize"
     Default: "false"
 
-  fontcolor
+  "fontcolor"
     Default: "black"
 
-  fontname
+  "fontname"
     Default: "Times-Roman"
 
-  fontsize
+  "fontsize"
     Default: 14.0
 
-  gradientangle
+  "gradientangle"
     Default: ""
 
-  group
+  "group"
     Default: ""
 
-  height
+  "height"
     Default: 0.5
 
-  href
+  "href"
     Default: ""
 
-  id
+  "id"
     Default: ""
 
-  image
+  "image"
     Default: ""
 
-  imagescale
+  "imagescale"
     Default: "false" ( Yes, really! )
 
-  label
+  "label"
     Default: "\\N" ( Appears to be a magic value for GraphViz )
 
-  labelloc
+  "labelloc"
     Default: "c"
 
-  layer
+  "layer"
     Default: ""
 
-  margin
+  "margin"
     Default: "unknown" ( Due to being render device specific defaults )
 
-  nojustify
+  "nojustify"
     Default: "false"
 
-  ordering
+  "ordering"
     Default: ""
 
-  orientation
+  "orientation"
     Default: 0.0
 
-  penwidth
+  "penwidth"
     Default: 1.0
 
-  peripheries
+  "peripheries"
     Default: "unknown"
 
-  pos
+  "pos"
     Default: "unknown"
 
-  rects
+  "rects"
     Default: "unknown"
 
-  regular
+  "regular"
     Default: "false"
 
-  root
+  "root"
     Default: "false"
 
-  samplepoints
+  "samplepoints"
     Default: "unknown"
 
     Reason: Dependent on render device.
 
-  shape
+  "shape"
     Default: "ellipse"
 
-  shapefile
+  "shapefile"
     Default: ""
 
-  sides
+  "sides"
     Default: 4
 
-  skew
+  "skew"
     Default: 0.0
 
-  sortv
+  "sortv"
     Default: 0
 
-  style
+  "style"
     Default: ""
 
-  target
+  "target"
     Default: "none"
 
-  tooltip
+  "tooltip"
     Default: ""
 
-  vertices
+  "vertices"
     Default: "unknown"
 
-  width
+  "width"
     Default: 0.75
 
-  xlabel
+  "xlabel"
     Default: ""
 
-  xlp
+  "xlp"
     Default: ""
 
-  z
+  "z"
     Default: 0.0
 
 SPECIAL VALUES

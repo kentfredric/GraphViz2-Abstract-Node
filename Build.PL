@@ -12,7 +12,7 @@ my %module_build_args = (
   "configure_requires" => {
     "Module::Build" => "0.4203"
   },
-  "dist_abstract" => "Deal with nodes indepdendent of a Graph",
+  "dist_abstract" => "Deal with nodes independent of a Graph",
   "dist_author" => [
     "Kent Fredric <kentfredric\@gmail.com>"
   ],

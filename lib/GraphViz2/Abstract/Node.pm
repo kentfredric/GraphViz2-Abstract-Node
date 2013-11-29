@@ -10,12 +10,12 @@ BEGIN {
   $GraphViz2::Abstract::Node::VERSION = '0.001000';
 }
 
-# ABSTRACT: Deal with nodes indepdendent of a Graph
+# ABSTRACT: Deal with nodes independent of a Graph
 
 use constant FALSE        => q[false];
 use constant EMPTY_STRING => q[];
-use constant UNKNOWN      => \"unknown";
-use constant NONE         => \"none";
+use constant UNKNOWN      => \q[unknown];
+use constant NONE         => \q[none];
 
 
 use Class::Tiny {
@@ -166,7 +166,7 @@ __END__
 
 =head1 NAME
 
-GraphViz2::Abstract::Node - Deal with nodes indepdendent of a Graph
+GraphViz2::Abstract::Node - Deal with nodes independent of a Graph
 
 =head1 VERSION
 
@@ -186,7 +186,7 @@ version 0.001000
 
     $node->label("Asdft");
 
-    my $fillcolor = $node->fillcolor(); # Knows that the fill colour is light grey despite never setting it.
+    my $fillcolor = $node->fillcolor(); # Knows that the fill color is light grey despite never setting it.
 
     # Later:
 
@@ -221,7 +221,7 @@ e.g.
 
     Node->new( color => 'black' )->as_hash();
 
-Will return an empty list, as the default colour is normally black.
+Will return an empty list, as the default color is normally black.
 
 See note about L<< C<Special Values>|/SPECIAL VALUES >>
 
@@ -239,181 +239,181 @@ See note about L<< C<Special Values>|/SPECIAL VALUES >>
 
 =head1 ATTRIBUTES
 
-=head2 area
+=head2 C<area>
 
 Default: 1.0
 
-=head2 color
+=head2 C<color>
 
 Default: "black"
 
-=head2 colorscheme
+=head2 C<colorscheme>
 
 Default: ""
 
-=head2 comment
+=head2 C<comment>
 
 Default: ""
 
-=head2 distortion
+=head2 C<distortion>
 
 Default: 0.0
 
-=head2 fillcolor
+=head2 C<fillcolor>
 
 Default: "lightgrey"
 
-=head2 fixedsize
+=head2 C<fixedsize>
 
 Default: L<< C<false>|/false >>
 
-=head2 fontcolor
+=head2 C<fontcolor>
 
 Default: "black"
 
-=head2 fontname
+=head2 C<fontname>
 
 Default: "Times-Roman"
 
-=head2 fontsize
+=head2 C<fontsize>
 
 Default: 14.0
 
-=head2 gradientangle
+=head2 C<gradientangle>
 
 Default: ""
 
-=head2 group
+=head2 C<group>
 
 Default: ""
 
-=head2 height
+=head2 C<height>
 
 Default: 0.5
 
-=head2 href
+=head2 C<href>
 
 Default: ""
 
-=head2 id
+=head2 C<id>
 
 Default: ""
 
-=head2 image
+=head2 C<image>
 
 Default: ""
 
-=head2 imagescale
+=head2 C<imagescale>
 
 Default: L<< C<false>|/false >>  ( Yes, really! )
 
-=head2 label
+=head2 C<label>
 
 Default: "\\N" ( Appears to be a magic value for GraphViz )
 
-=head2 labelloc
+=head2 C<labelloc>
 
 Default: "c"
 
-=head2 layer
+=head2 C<layer>
 
 Default: ""
 
-=head2 margin
+=head2 C<margin>
 
 Default: L<< C<unknown>|/UNKNOWN >>  ( Due to being render device specific defaults )
 
-=head2 nojustify
+=head2 C<nojustify>
 
 Default: L<< C<false>|/false >>
 
-=head2 ordering
+=head2 C<ordering>
 
 Default: ""
 
-=head2 orientation
+=head2 C<orientation>
 
 Default: 0.0
 
-=head2 penwidth
+=head2 C<penwidth>
 
 Default: 1.0
 
-=head2 peripheries
+=head2 C<peripheries>
 
 Default: L<< C<unknown>|/UNKNOWN >>
 
-=head2 pos
+=head2 C<pos>
 
 Default: L<< C<unknown>|/UNKNOWN >>
 
-=head2 rects
+=head2 C<rects>
 
 Default: L<< C<unknown>|/UNKNOWN >>
 
-=head2 regular
+=head2 C<regular>
 
 Default: L<< C<false>|/false >>
 
-=head2 root
+=head2 C<root>
 
 Default: L<< C<false>|/false >>
 
-=head2 samplepoints
+=head2 C<samplepoints>
 
 Default: L<< C<unknown>|/UNKNOWN >>
 
 Reason: Dependent on render device.
 
-=head2 shape
+=head2 C<shape>
 
 Default: "ellipse"
 
-=head2 shapefile
+=head2 C<shapefile>
 
 Default: ""
 
-=head2 sides
+=head2 C<sides>
 
 Default: 4
 
-=head2 skew
+=head2 C<skew>
 
 Default: 0.0
 
-=head2 sortv
+=head2 C<sortv>
 
 Default: 0
 
-=head2 style
+=head2 C<style>
 
 Default: ""
 
-=head2 target
+=head2 C<target>
 
 Default: L<< C<none>|/NONE >>
 
-=head2 tooltip
+=head2 C<tooltip>
 
 Default: ""
 
-=head2 vertices
+=head2 C<vertices>
 
 Default: L<< C<unknown>|/UNKNOWN >>
 
-=head2 width
+=head2 C<width>
 
 Default: 0.75
 
-=head2 xlabel
+=head2 C<xlabel>
 
 Default: ""
 
-=head2 xlp
+=head2 C<xlp>
 
 Default: ""
 
-=head2 z
+=head2 C<z>
 
 Default: 0.0
 
