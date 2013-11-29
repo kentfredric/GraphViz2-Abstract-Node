@@ -7,7 +7,7 @@ VERSION
 SYNOPSIS
         use GraphViz2::Abstract::Node;
 
-        my $node = GraphViz2::Abstract::Node->new( 
+        my $node = GraphViz2::Abstract::Node->new(
                 color =>  ... ,
                 id    =>  ... ,
                 label =>  ... ,
@@ -279,6 +279,6 @@ POD ERRORS
     Hey! The above document had some coding errors, which are explained
     below:
 
-    Around line 465:
+    Around line 464:
         Expected '=item *'
 

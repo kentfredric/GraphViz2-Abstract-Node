@@ -18,7 +18,6 @@ use constant UNKNOWN      => \"unknown";
 use constant NONE         => \"none";
 
 
-
 use Class::Tiny {
   area          => 1.0,
   color         => 'black',
@@ -109,7 +108,7 @@ sub _foreach_attr {
   my @attrs    = Class::Tiny->get_all_attributes_for($class);
   my $defaults = Class::Tiny->get_all_attribute_defaults_for(__PACKAGE__);
   for my $attr (@attrs) {
-    my $value = $self->$attr();
+    my $value       = $self->$attr();
     my $has_default = exists $defaults->{$attr};
     my $default;
     if ($has_default) {
@@ -177,7 +176,7 @@ version 0.001000
 
     use GraphViz2::Abstract::Node;
 
-    my $node = GraphViz2::Abstract::Node->new( 
+    my $node = GraphViz2::Abstract::Node->new(
             color =>  ... ,
             id    =>  ... ,
             label =>  ... ,
@@ -342,15 +341,15 @@ Default: 1.0
 
 =head2 peripheries
 
-Default: L<< C<unknown>|/UNKNOWN >> 
+Default: L<< C<unknown>|/UNKNOWN >>
 
 =head2 pos
 
-Default: L<< C<unknown>|/UNKNOWN >> 
+Default: L<< C<unknown>|/UNKNOWN >>
 
 =head2 rects
 
-Default: L<< C<unknown>|/UNKNOWN >> 
+Default: L<< C<unknown>|/UNKNOWN >>
 
 =head2 regular
 
@@ -358,7 +357,7 @@ Default: L<< C<false>|/false >>
 
 =head2 root
 
-Default: L<< C<false>|/false >> 
+Default: L<< C<false>|/false >>
 
 =head2 samplepoints
 
