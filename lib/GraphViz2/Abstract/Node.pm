@@ -7,7 +7,7 @@ BEGIN {
   $GraphViz2::Abstract::Node::AUTHORITY = 'cpan:KENTNL';
 }
 {
-  $GraphViz2::Abstract::Node::VERSION = '0.001000';
+  $GraphViz2::Abstract::Node::VERSION = '0.001001';
 }
 
 # ABSTRACT: Deal with nodes independent of a Graph
@@ -21,6 +21,7 @@ our @CARP_NOT;
 
 
 use Class::Tiny {
+  URL           => NONE,
   area          => 1.0,
   color         => 'black',
   colorscheme   => EMPTY_STRING,
@@ -54,6 +55,7 @@ use Class::Tiny {
   samplepoints  => UNKNOWN,
   shape         => 'ellipse',
   shapefile     => EMPTY_STRING,
+  showboxes     => 0,
   sides         => 4,
   skew          => 0.0,
   sortv         => 0,
@@ -174,7 +176,7 @@ GraphViz2::Abstract::Node - Deal with nodes independent of a Graph
 
 =head1 VERSION
 
-version 0.001000
+version 0.001001
 
 =head1 SYNOPSIS
 
@@ -242,6 +244,10 @@ Will return a very large list containing all the properties that we know the def
 See note about L<< C<Special Values>|/SPECIAL VALUES >>
 
 =head1 ATTRIBUTES
+
+=head2 C<URL>
+
+Default: L<< C<none>|/NONE >>
 
 =head2 C<area>
 
@@ -376,6 +382,10 @@ Default: C<"ellipse">
 =head2 C<shapefile>
 
 Default: C<"">
+
+=head2 C<showboxes>
+
+Default: C<0>
 
 =head2 C<sides>
 
