@@ -241,27 +241,27 @@ See note about L<< C<Special Values>|/SPECIAL VALUES >>
 
 =head2 C<area>
 
-Default: 1.0
+Default: C<1.0>
 
 =head2 C<color>
 
-Default: "black"
+Default: C<"black">
 
 =head2 C<colorscheme>
 
-Default: ""
+Default: C<"">
 
 =head2 C<comment>
 
-Default: ""
+Default: C<"">
 
 =head2 C<distortion>
 
-Default: 0.0
+Default: C<0.0>
 
 =head2 C<fillcolor>
 
-Default: "lightgrey"
+Default: C<"lightgrey">
 
 =head2 C<fixedsize>
 
@@ -269,39 +269,39 @@ Default: L<< C<false>|/false >>
 
 =head2 C<fontcolor>
 
-Default: "black"
+Default: C<"black">
 
 =head2 C<fontname>
 
-Default: "Times-Roman"
+Default: C<"Times-Roman">
 
 =head2 C<fontsize>
 
-Default: 14.0
+Default: C<14.0>
 
 =head2 C<gradientangle>
 
-Default: ""
+Default: C<"">
 
 =head2 C<group>
 
-Default: ""
+Default: C<"">
 
 =head2 C<height>
 
-Default: 0.5
+Default: C<0.5>
 
 =head2 C<href>
 
-Default: ""
+Default: C<"">
 
 =head2 C<id>
 
-Default: ""
+Default: C<"">
 
 =head2 C<image>
 
-Default: ""
+Default: C<"">
 
 =head2 C<imagescale>
 
@@ -309,15 +309,15 @@ Default: L<< C<false>|/false >>  ( Yes, really! )
 
 =head2 C<label>
 
-Default: "\\N" ( Appears to be a magic value for GraphViz )
+Default: C<"\\N"> ( Appears to be a magic value for GraphViz )
 
 =head2 C<labelloc>
 
-Default: "c"
+Default: C<"c">
 
 =head2 C<layer>
 
-Default: ""
+Default: C<"">
 
 =head2 C<margin>
 
@@ -329,15 +329,15 @@ Default: L<< C<false>|/false >>
 
 =head2 C<ordering>
 
-Default: ""
+Default: C<"">
 
 =head2 C<orientation>
 
-Default: 0.0
+Default: C<0.0>
 
 =head2 C<penwidth>
 
-Default: 1.0
+Default: C<1.0>
 
 =head2 C<peripheries>
 
@@ -367,27 +367,27 @@ Reason: Dependent on render device.
 
 =head2 C<shape>
 
-Default: "ellipse"
+Default: C<"ellipse">
 
 =head2 C<shapefile>
 
-Default: ""
+Default: C<"">
 
 =head2 C<sides>
 
-Default: 4
+Default: C<4>
 
 =head2 C<skew>
 
-Default: 0.0
+Default: C<0.0>
 
 =head2 C<sortv>
 
-Default: 0
+Default: C<0>
 
 =head2 C<style>
 
-Default: ""
+Default: C<"">
 
 =head2 C<target>
 
@@ -395,7 +395,7 @@ Default: L<< C<none>|/NONE >>
 
 =head2 C<tooltip>
 
-Default: ""
+Default: C<"">
 
 =head2 C<vertices>
 
@@ -403,19 +403,19 @@ Default: L<< C<unknown>|/UNKNOWN >>
 
 =head2 C<width>
 
-Default: 0.75
+Default: C<0.75>
 
 =head2 C<xlabel>
 
-Default: ""
+Default: C<"">
 
 =head2 C<xlp>
 
-Default: ""
+Default: C<"">
 
 =head2 C<z>
 
-Default: 0.0
+Default: C<0.0>
 
 =head1 SPECIAL VALUES
 
