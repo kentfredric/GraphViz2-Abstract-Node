@@ -1,6 +1,7 @@
 Release history for GraphViz2-Abstract-Node
 
 {{$NEXT}}
+ - Add URL and showboxes fields.
 
 0.001000 2013-11-29T17:59:27Z
  - First version.

@@ -4,7 +4,7 @@ GraphViz2::Abstract::Node - Deal with nodes independent of a Graph
 
 # VERSION
 
-version 0.001000
+version 0.001001
 
 # SYNOPSIS
 
@@ -72,6 +72,10 @@ Will return a very large list containing all the properties that we know the def
 See note about [`Special Values`](#special-values)
 
 # ATTRIBUTES
+
+## `URL`
+
+Default: [`none`](#none)
 
 ## `area`
 
@@ -206,6 +210,10 @@ Default: `"ellipse"`
 ## `shapefile`
 
 Default: `""`
+
+## `showboxes`
+
+Default: `0`
 
 ## `sides`
 

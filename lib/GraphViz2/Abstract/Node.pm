@@ -55,6 +55,7 @@ but in such a way that they make importing that data into C<GraphViz2> easy.
 =cut
 
 use Class::Tiny {
+  URL           => NONE,
   area          => 1.0,
   color         => 'black',
   colorscheme   => EMPTY_STRING,
@@ -88,6 +89,7 @@ use Class::Tiny {
   samplepoints  => UNKNOWN,
   shape         => 'ellipse',
   shapefile     => EMPTY_STRING,
+  showboxes     => 0,
   sides         => 4,
   skew          => 0.0,
   sortv         => 0,
@@ -100,6 +102,10 @@ use Class::Tiny {
   xlp           => EMPTY_STRING,
   z             => 0.0,
 };
+
+=attr C<URL>
+
+Default: L<< C<none>|/NONE >>
 
 =attr C<area>
 
@@ -234,6 +240,10 @@ Default: C<"ellipse">
 =attr C<shapefile>
 
 Default: C<"">
+
+=attr C<showboxes>
+
+Default: C<0>
 
 =attr C<sides>
 
