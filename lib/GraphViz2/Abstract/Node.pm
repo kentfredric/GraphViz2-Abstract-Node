@@ -12,7 +12,7 @@ BEGIN {
 
 # ABSTRACT: Deal with nodes indepdendent of a Graph
 
-use constant FALSE        => undef;
+use constant FALSE        => q[false];
 use constant EMPTY_STRING => q[];
 use constant UNKNOWN      => \"unknown";
 use constant NONE         => \"none";
@@ -426,8 +426,11 @@ which represent a fundamental incompatibility with native Perl code.
 
 =item * C<false>
 
-Where the specification shows C<false> as a default value, this module instead returns C<undef>
-While this may change in future, C<undef> seems a sane default for C<false>.
+Where the specification shows C<false> as a default value, this module instead returns the string C<false>
+
+This is because under the hood, GraphViz2 doesn't support values for attributes other than defined ones.
+
+So its assumed that graphviz, under the hood, interprets the string "false" the same as the boolean condition "false";
 
 =item * C<NONE>
 

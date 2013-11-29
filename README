@@ -213,8 +213,13 @@ SPECIAL VALUES
     *   "false"
 
         Where the specification shows "false" as a default value, this
-        module instead returns "undef" While this may change in future,
-        "undef" seems a sane default for "false".
+        module instead returns the string "false"
+
+        This is because under the hood, GraphViz2 doesn't support values for
+        attributes other than defined ones.
+
+        So its assumed that graphviz, under the hood, interprets the string
+        "false" the same as the boolean condition "false";
 
     *   "NONE"
 
@@ -279,6 +284,6 @@ POD ERRORS
     Hey! The above document had some coding errors, which are explained
     below:
 
-    Around line 464:
+    Around line 467:
         Expected '=item *'
 

@@ -33,14 +33,22 @@ my %module_build_args = (
   },
   "script_files" => [],
   "test_requires" => {
-    "Test::More" => "1.001002"
+    "GraphViz2" => 0,
+    "Path::Tiny" => 0,
+    "Test::Fatal" => 0,
+    "Test::More" => "1.001002",
+    "parent" => 0
   }
 );
 
 
 my %fallback_build_requires = (
+  "GraphViz2" => 0,
   "Module::Build" => "0.4203",
-  "Test::More" => "1.001002"
+  "Path::Tiny" => 0,
+  "Test::Fatal" => 0,
+  "Test::More" => "1.001002",
+  "parent" => 0
 );
 
 
