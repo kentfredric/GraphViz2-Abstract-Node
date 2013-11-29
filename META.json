@@ -87,7 +87,7 @@
             "Class::Tiny" : "0",
             "Scalar::Util" : "0",
             "constant" : "0",
-            "perl" : "5.008",
+            "perl" : "5.014002",
             "strict" : "0",
             "utf8" : "0",
             "warnings" : "0"
