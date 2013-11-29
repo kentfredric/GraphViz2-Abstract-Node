@@ -26,6 +26,7 @@ before_install:
   - perlbrew list
   - time perl ./maint-travis-ci/branch_reset.pl
   - time perl ./maint-travis-ci/sterilize_env.pl
+  - time sudo apt-get install graphviz
 install:
   - time perl ./maint-travis-ci/install_deps.pl
 before_script:
