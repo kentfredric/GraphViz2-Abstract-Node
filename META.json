@@ -105,7 +105,7 @@
    "provides" : {
       "GraphViz2::Abstract::Node" : {
          "file" : "lib/GraphViz2/Abstract/Node.pm",
-         "version" : "0.001001"
+         "version" : "0.001002"
       }
    },
    "release_status" : "stable",
@@ -120,7 +120,7 @@
          "web" : "https://github.com/kentfredric/GraphViz2-Abstract-Node"
       }
    },
-   "version" : "0.001001",
+   "version" : "0.001002",
    "x_BuiltWith" : {
       "modules" : {
          "Carp" : "1.32",

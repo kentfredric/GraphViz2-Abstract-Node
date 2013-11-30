@@ -2,7 +2,7 @@ NAME
     GraphViz2::Abstract::Node - Deal with nodes independent of a Graph
 
 VERSION
-    version 0.001001
+    version 0.001002
 
 SYNOPSIS
         use GraphViz2::Abstract::Node;
