@@ -1,6 +1,8 @@
 Release history for GraphViz2-Abstract-Node
 
 {{$NEXT}}
+
+0.001001 2013-11-30T09:18:32Z
  - Add URL and showboxes fields.
 
  [Dependencies::Stats]
