@@ -17,7 +17,7 @@ my %module_build_args = (
     "Kent Fredric <kentfredric\@gmail.com>"
   ],
   "dist_name" => "GraphViz2-Abstract-Node",
-  "dist_version" => "0.001000",
+  "dist_version" => "0.001001",
   "license" => "perl",
   "module_name" => "GraphViz2::Abstract::Node",
   "recommends" => {},

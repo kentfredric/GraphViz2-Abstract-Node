@@ -2,7 +2,7 @@ NAME
     GraphViz2::Abstract::Node - Deal with nodes independent of a Graph
 
 VERSION
-    version 0.001000
+    version 0.001001
 
 SYNOPSIS
         use GraphViz2::Abstract::Node;
@@ -71,6 +71,9 @@ METHODS
     See note about "Special Values"
 
 ATTRIBUTES
+  "URL"
+    Default: "none"
+
   "area"
     Default: 1.0
 
@@ -171,6 +174,9 @@ ATTRIBUTES
 
   "shapefile"
     Default: ""
+
+  "showboxes"
+    Default: 0
 
   "sides"
     Default: 4
