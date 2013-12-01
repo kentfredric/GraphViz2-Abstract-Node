@@ -4,7 +4,7 @@ GraphViz2::Abstract::Node - Deal with nodes independent of a Graph
 
 # VERSION
 
-version 0.001001
+version 0.002000
 
 # SYNOPSIS
 
@@ -57,7 +57,7 @@ e.g.
 
 Will return an empty list, as the default color is normally black.
 
-See note about [`Special Values`](#special-values)
+See also [how special constants work in](https://metacpan.org/pod/GraphViz2::Abstract::Util::Constants#CONSTANTS)
 
 ## `as_canon_hash`
 
@@ -69,13 +69,13 @@ e.g.
 
 Will return a very large list containing all the properties that we know the default values for.
 
-See note about [`Special Values`](#special-values)
+See also [how special constants work in](https://metacpan.org/pod/GraphViz2::Abstract::Util::Constants#CONSTANTS)
 
 # ATTRIBUTES
 
 ## `URL`
 
-Default: [`none`](#none)
+Default: [`none`](https://metacpan.org/pod/GraphViz2::Abstract::Util::Constants#NONE)
 
 ## `area`
 
@@ -87,11 +87,11 @@ Default: `"black"`
 
 ## `colorscheme`
 
-Default: `""`
+Default: [`""`](https://metacpan.org/pod/GraphViz2::Abstract::Util::Constants#EMPTY_STRING)
 
 ## `comment`
 
-Default: `""`
+Default: [`""`](https://metacpan.org/pod/GraphViz2::Abstract::Util::Constants#EMPTY_STRING)
 
 ## `distortion`
 
@@ -103,7 +103,7 @@ Default: `"lightgrey"`
 
 ## `fixedsize`
 
-Default: [`false`](#false)
+Default: [`false`](https://metacpan.org/pod/GraphViz2::Abstract::Util::Constants#FALSE)
 
 ## `fontcolor`
 
@@ -119,11 +119,11 @@ Default: `14.0`
 
 ## `gradientangle`
 
-Default: `""`
+Default: [`""`](https://metacpan.org/pod/GraphViz2::Abstract::Util::Constants#EMPTY_STRING)
 
 ## `group`
 
-Default: `""`
+Default: [`""`](https://metacpan.org/pod/GraphViz2::Abstract::Util::Constants#EMPTY_STRING)
 
 ## `height`
 
@@ -131,19 +131,19 @@ Default: `0.5`
 
 ## `href`
 
-Default: `""`
+Default: [`""`](https://metacpan.org/pod/GraphViz2::Abstract::Util::Constants#EMPTY_STRING)
 
 ## `id`
 
-Default: `""`
+Default: [`""`](https://metacpan.org/pod/GraphViz2::Abstract::Util::Constants#EMPTY_STRING)
 
 ## `image`
 
-Default: `""`
+Default: [`""`](https://metacpan.org/pod/GraphViz2::Abstract::Util::Constants#EMPTY_STRING)
 
 ## `imagescale`
 
-Default: [`false`](#false)  ( Yes, really! )
+Default: [`false`](https://metacpan.org/pod/GraphViz2::Abstract::Util::Constants#FALSE)  ( Yes, really! )
 
 ## `label`
 
@@ -155,19 +155,19 @@ Default: `"c"`
 
 ## `layer`
 
-Default: `""`
+Default: [`""`](https://metacpan.org/pod/GraphViz2::Abstract::Util::Constants#EMPTY_STRING)
 
 ## `margin`
 
-Default: [`unknown`](#unknown)  ( Due to being render device specific defaults )
+Default: [`unknown`](https://metacpan.org/pod/GraphViz2::Abstract::Util::Constants#UNKNOWN)  ( Due to being render device specific defaults )
 
 ## `nojustify`
 
-Default: [`false`](#false)
+Default: [`false`](https://metacpan.org/pod/GraphViz2::Abstract::Util::Constants#FALSE)
 
 ## `ordering`
 
-Default: `""`
+Default: [`""`](https://metacpan.org/pod/GraphViz2::Abstract::Util::Constants#EMPTY_STRING)
 
 ## `orientation`
 
@@ -179,27 +179,27 @@ Default: `1.0`
 
 ## `peripheries`
 
-Default: [`unknown`](#unknown)
+Default: [`unknown`](https://metacpan.org/pod/GraphViz2::Abstract::Util::Constants#UNKNOWN)
 
 ## `pos`
 
-Default: [`unknown`](#unknown)
+Default: [`unknown`](https://metacpan.org/pod/GraphViz2::Abstract::Util::Constants#UNKNOWN)
 
 ## `rects`
 
-Default: [`unknown`](#unknown)
+Default: [`unknown`](https://metacpan.org/pod/GraphViz2::Abstract::Util::Constants#UNKNOWN)
 
 ## `regular`
 
-Default: [`false`](#false)
+Default: [`false`](https://metacpan.org/pod/GraphViz2::Abstract::Util::Constants#FALSE)
 
 ## `root`
 
-Default: [`false`](#false)
+Default: [`false`](https://metacpan.org/pod/GraphViz2::Abstract::Util::Constants#FALSE)
 
 ## `samplepoints`
 
-Default: [`unknown`](#unknown)
+Default: [`unknown`](https://metacpan.org/pod/GraphViz2::Abstract::Util::Constants#UNKNOWN)
 
 Reason: Dependent on render device.
 
@@ -209,7 +209,7 @@ Default: `"ellipse"`
 
 ## `shapefile`
 
-Default: `""`
+Default: [`""`](https://metacpan.org/pod/GraphViz2::Abstract::Util::Constants#EMPTY_STRING)
 
 ## `showboxes`
 
@@ -229,19 +229,19 @@ Default: `0`
 
 ## `style`
 
-Default: `""`
+Default: [`""`](https://metacpan.org/pod/GraphViz2::Abstract::Util::Constants#EMPTY_STRING)
 
 ## `target`
 
-Default: [`none`](#none)
+Default: [`none`](https://metacpan.org/pod/GraphViz2::Abstract::Util::Constants#NONE)
 
 ## `tooltip`
 
-Default: `""`
+Default: [`""`](https://metacpan.org/pod/GraphViz2::Abstract::Util::Constants#EMPTY_STRING)
 
 ## `vertices`
 
-Default: [`unknown`](#unknown)
+Default: [`unknown`](https://metacpan.org/pod/GraphViz2::Abstract::Util::Constants#UNKNOWN)
 
 ## `width`
 
@@ -249,69 +249,15 @@ Default: `0.75`
 
 ## `xlabel`
 
-Default: `""`
+Default: [`""`](https://metacpan.org/pod/GraphViz2::Abstract::Util::Constants#EMPTY_STRING)
 
 ## `xlp`
 
-Default: `""`
+Default: [`""`](https://metacpan.org/pod/GraphViz2::Abstract::Util::Constants#EMPTY_STRING)
 
 ## `z`
 
 Default: `0.0`
-
-# SPECIAL VALUES
-
-In the specification, on GraphViz.org, there are a number of special values
-which represent a fundamental incompatibility with native Perl code.
-
-- `false`
-
-    Where the specification shows `false` as a default value, this module instead returns the string `false`
-
-    This is because under the hood, GraphViz2 doesn't support values for attributes other than defined ones.
-
-    So its assumed that GraphViz, under the hood, interprets the string "false" the same as the boolean condition "false";
-
-- `NONE`
-
-    In the GraphViz docs, a few items have a default value specified as:
-
-        <none>
-
-    This item was confusing in the specification, and it wasn't clear if it was some sort of magic string, or what.
-
-    Internally, we use a special value, a reference to a string "none" to represent this default.
-
-    For instance:
-
-        my $v = Node->new()->target();
-
-        ok( ref $v, 'target returned a ref' );
-        is( ref $v, 'SCALAR', 'target returned a scalar ref' );
-        is( ${ $v }, 'none', 'target returned a scalar ref of "none"' );
-
-    However, because its not known how to canonicalize such forms, those values are presently not returned by either `as_hash` methods.
-
-    So as a result:
-
-        my $v = Node->new( color => \"none" )->as_hash()
-
-    Will emit an empty hash. ( Despite "none" being different from the default ).
-
-    Also:
-
-        my $v = Node->new( color => \"none" )->as_canon_hash()
-
-    Will not emit a value for `color` in its output, which may have the undesirable effect of reverting to the default, `black` once rendered.
-
-- `UNKNOWN`
-
-    On the GraphViz documentations, there were quite a few fields where the defaults were simply not specified,
-    or their values were cryptic.
-
-    Internally, those fields have the default value of `\"unknown"`
-
-    Like `"none"`, those fields with those values will not be emitted during hash production.
 
 # AUTHOR
 

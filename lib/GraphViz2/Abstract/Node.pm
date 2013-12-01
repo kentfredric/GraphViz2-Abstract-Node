@@ -6,10 +6,7 @@ package GraphViz2::Abstract::Node;
 
 # ABSTRACT: Deal with nodes independent of a Graph
 
-use constant FALSE        => q[false];
-use constant EMPTY_STRING => q[];
-use constant UNKNOWN      => \q[unknown];
-use constant NONE         => \q[none];
+use GraphViz2::Abstract::Util::Constants;
 
 our @CARP_NOT;
 
@@ -105,7 +102,7 @@ use Class::Tiny {
 
 =attr C<URL>
 
-Default: L<< C<none>|/NONE >>
+Default: L<< C<none>|GraphViz2::Abstract::Util::Constants/NONE >>
 
 =attr C<area>
 
@@ -117,11 +114,11 @@ Default: C<"black">
 
 =attr C<colorscheme>
 
-Default: C<"">
+Default: L<< C<"">|GraphViz2::Abstract::Util::Constants/EMPTY_STRING >>
 
 =attr C<comment>
 
-Default: C<"">
+Default: L<< C<"">|GraphViz2::Abstract::Util::Constants/EMPTY_STRING >>
 
 =attr C<distortion>
 
@@ -133,7 +130,7 @@ Default: C<"lightgrey">
 
 =attr C<fixedsize>
 
-Default: L<< C<false>|/false >>
+Default: L<< C<false>|GraphViz2::Abstract::Util::Constants/FALSE >>
 
 =attr C<fontcolor>
 
@@ -149,11 +146,11 @@ Default: C<14.0>
 
 =attr C<gradientangle>
 
-Default: C<"">
+Default: L<< C<"">|GraphViz2::Abstract::Util::Constants/EMPTY_STRING >>
 
 =attr C<group>
 
-Default: C<"">
+Default: L<< C<"">|GraphViz2::Abstract::Util::Constants/EMPTY_STRING >>
 
 =attr C<height>
 
@@ -161,19 +158,19 @@ Default: C<0.5>
 
 =attr C<href>
 
-Default: C<"">
+Default: L<< C<"">|GraphViz2::Abstract::Util::Constants/EMPTY_STRING >>
 
 =attr C<id>
 
-Default: C<"">
+Default: L<< C<"">|GraphViz2::Abstract::Util::Constants/EMPTY_STRING >>
 
 =attr C<image>
 
-Default: C<"">
+Default: L<< C<"">|GraphViz2::Abstract::Util::Constants/EMPTY_STRING >>
 
 =attr C<imagescale>
 
-Default: L<< C<false>|/false >>  ( Yes, really! )
+Default: L<< C<false>|GraphViz2::Abstract::Util::Constants/FALSE >>  ( Yes, really! )
 
 =attr C<label>
 
@@ -185,19 +182,19 @@ Default: C<"c">
 
 =attr C<layer>
 
-Default: C<"">
+Default: L<< C<"">|GraphViz2::Abstract::Util::Constants/EMPTY_STRING >>
 
 =attr C<margin>
 
-Default: L<< C<unknown>|/UNKNOWN >>  ( Due to being render device specific defaults )
+Default: L<< C<unknown>|GraphViz2::Abstract::Util::Constants/UNKNOWN >>  ( Due to being render device specific defaults )
 
 =attr C<nojustify>
 
-Default: L<< C<false>|/false >>
+Default: L<< C<false>|GraphViz2::Abstract::Util::Constants/FALSE >>
 
 =attr C<ordering>
 
-Default: C<"">
+Default: L<< C<"">|GraphViz2::Abstract::Util::Constants/EMPTY_STRING >>
 
 =attr C<orientation>
 
@@ -209,27 +206,27 @@ Default: C<1.0>
 
 =attr C<peripheries>
 
-Default: L<< C<unknown>|/UNKNOWN >>
+Default: L<< C<unknown>|GraphViz2::Abstract::Util::Constants/UNKNOWN >>
 
 =attr C<pos>
 
-Default: L<< C<unknown>|/UNKNOWN >>
+Default: L<< C<unknown>|GraphViz2::Abstract::Util::Constants/UNKNOWN >>
 
 =attr C<rects>
 
-Default: L<< C<unknown>|/UNKNOWN >>
+Default: L<< C<unknown>|GraphViz2::Abstract::Util::Constants/UNKNOWN >>
 
 =attr C<regular>
 
-Default: L<< C<false>|/false >>
+Default: L<< C<false>|GraphViz2::Abstract::Util::Constants/FALSE >>
 
 =attr C<root>
 
-Default: L<< C<false>|/false >>
+Default: L<< C<false>|GraphViz2::Abstract::Util::Constants/FALSE >>
 
 =attr C<samplepoints>
 
-Default: L<< C<unknown>|/UNKNOWN >>
+Default: L<< C<unknown>|GraphViz2::Abstract::Util::Constants/UNKNOWN >>
 
 Reason: Dependent on render device.
 
@@ -239,7 +236,7 @@ Default: C<"ellipse">
 
 =attr C<shapefile>
 
-Default: C<"">
+Default: L<< C<"">|GraphViz2::Abstract::Util::Constants/EMPTY_STRING >>
 
 =attr C<showboxes>
 
@@ -259,19 +256,19 @@ Default: C<0>
 
 =attr C<style>
 
-Default: C<"">
+Default: L<< C<"">|GraphViz2::Abstract::Util::Constants/EMPTY_STRING >>
 
 =attr C<target>
 
-Default: L<< C<none>|/NONE >>
+Default: L<< C<none>|GraphViz2::Abstract::Util::Constants/NONE >>
 
 =attr C<tooltip>
 
-Default: C<"">
+Default: L<< C<"">|GraphViz2::Abstract::Util::Constants/EMPTY_STRING >>
 
 =attr C<vertices>
 
-Default: L<< C<unknown>|/UNKNOWN >>
+Default: L<< C<unknown>|GraphViz2::Abstract::Util::Constants/UNKNOWN >>
 
 =attr C<width>
 
@@ -279,11 +276,11 @@ Default: C<0.75>
 
 =attr C<xlabel>
 
-Default: C<"">
+Default: L<< C<"">|GraphViz2::Abstract::Util::Constants/EMPTY_STRING >>
 
 =attr C<xlp>
 
-Default: C<"">
+Default: L<< C<"">|GraphViz2::Abstract::Util::Constants/EMPTY_STRING >>
 
 =attr C<z>
 
@@ -356,7 +353,7 @@ e.g.
 
 Will return an empty list, as the default color is normally black.
 
-See note about L<< C<Special Values>|/SPECIAL VALUES >>
+See also L<< how special constants work in|GraphViz2::Abstract::Util::Constants/CONSTANTS >>
 
 =cut
 
@@ -390,7 +387,7 @@ e.g.
 
 Will return a very large list containing all the properties that we know the default values for.
 
-See note about L<< C<Special Values>|/SPECIAL VALUES >>
+See also L<< how special constants work in|GraphViz2::Abstract::Util::Constants/CONSTANTS >>
 
 =cut
 
@@ -408,64 +405,5 @@ sub as_canon_hash {
 
 }
 
-=head1 SPECIAL VALUES
-
-In the specification, on GraphViz.org, there are a number of special values
-which represent a fundamental incompatibility with native Perl code.
-
-=over 4
-
-=item * C<false>
-
-Where the specification shows C<false> as a default value, this module instead returns the string C<false>
-
-This is because under the hood, GraphViz2 doesn't support values for attributes other than defined ones.
-
-So its assumed that GraphViz, under the hood, interprets the string "false" the same as the boolean condition "false";
-
-=item * C<NONE>
-
-In the GraphViz docs, a few items have a default value specified as:
-
-    <none>
-
-This item was confusing in the specification, and it wasn't clear if it was some sort of magic string, or what.
-
-Internally, we use a special value, a reference to a string "none" to represent this default.
-
-For instance:
-
-    my $v = Node->new()->target();
-
-    ok( ref $v, 'target returned a ref' );
-    is( ref $v, 'SCALAR', 'target returned a scalar ref' );
-    is( ${ $v }, 'none', 'target returned a scalar ref of "none"' );
-
-However, because its not known how to canonicalize such forms, those values are presently not returned by either C<as_hash> methods.
-
-So as a result:
-
-    my $v = Node->new( color => \"none" )->as_hash()
-
-Will emit an empty hash. ( Despite "none" being different from the default ).
-
-Also:
-
-    my $v = Node->new( color => \"none" )->as_canon_hash()
-
-Will not emit a value for C<color> in its output, which may have the undesirable effect of reverting to the default, C<black> once rendered.
-
-=item * C<UNKNOWN>
-
-On the GraphViz documentations, there were quite a few fields where the defaults were simply not specified,
-or their values were cryptic.
-
-Internally, those fields have the default value of C<\"unknown">
-
-Like C<"none">, those fields with those values will not be emitted during hash production.
-
-=back
-
-=cut
 
 1;
