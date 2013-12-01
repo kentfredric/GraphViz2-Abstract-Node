@@ -1,6 +1,8 @@
 Release history for GraphViz2-Abstract-Node
 
-0.002000 2013-12-01T05:44:07Z
+0.002000 2013-12-01T05:46:14Z
+ - Factor out constants into GV2:A:Util::Constants
+
  [Dependencies::Stats]
  - Dependencies changed, see Changes.deps{,.all,.dev} for details
  - develop: +2 ↑1 -2
