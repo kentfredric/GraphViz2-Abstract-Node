@@ -1,6 +1,8 @@
 Release history for GraphViz2-Abstract-Node
 
 {{$NEXT}}
+
+0.002000 2013-12-01T05:47:00Z
  - Factor out constants into GV2:A:Util::Constants
 
  [Dependencies::Stats]
