@@ -7,7 +7,7 @@ BEGIN {
   $GraphViz2::Abstract::Node::AUTHORITY = 'cpan:KENTNL';
 }
 {
-  $GraphViz2::Abstract::Node::VERSION = '0.001002';
+  $GraphViz2::Abstract::Node::VERSION = '0.002000';
 }
 
 # ABSTRACT: Deal with nodes independent of a Graph
@@ -173,7 +173,7 @@ GraphViz2::Abstract::Node - Deal with nodes independent of a Graph
 
 =head1 VERSION
 
-version 0.001002
+version 0.002000
 
 =head1 SYNOPSIS
 
