@@ -21,12 +21,12 @@ name: GraphViz2-Abstract-Node
 provides:
   GraphViz2::Abstract::Node:
     file: lib/GraphViz2/Abstract/Node.pm
-    version: 0.001001
+    version: 0.002000
 requires:
   Carp: 0
   Class::Tiny: 0
+  GraphViz2::Abstract::Util::Constants: 0
   Scalar::Util: 0
-  constant: 0
   perl: 5.014002
   strict: 0
   utf8: 0
@@ -35,15 +35,13 @@ resources:
   bugtracker: https://github.com/kentfredric/GraphViz2-Abstract-Node/issues
   homepage: https://github.com/kentfredric/GraphViz2-Abstract-Node
   repository: https://github.com/kentfredric/GraphViz2-Abstract-Node.git
-version: 0.001001
+version: 0.002000
 x_BuiltWith:
   modules:
     Carp: 1.32
     Class::Tiny: 0.014
-    Dist::Zilla::Plugin::Author::KENTNL::MinimumPerl: 2.005000
     Dist::Zilla::Plugin::Authority: 1.006
     Dist::Zilla::Plugin::AutoPrereqs: 5.006
-    Dist::Zilla::Plugin::CheckExtraTests: 0.016
     Dist::Zilla::Plugin::ConfirmRelease: 5.006
     Dist::Zilla::Plugin::EOLTests: 0.02
     Dist::Zilla::Plugin::Git::Check: 2.019
@@ -62,6 +60,7 @@ x_BuiltWith:
     Dist::Zilla::Plugin::MetaProvides::Package: 1.15000001
     Dist::Zilla::Plugin::MetaTests: 5.006
     Dist::Zilla::Plugin::MetaYAML: 5.006
+    Dist::Zilla::Plugin::MinimumPerl: 1.003
     Dist::Zilla::Plugin::ModuleBuild: 5.006
     Dist::Zilla::Plugin::NextRelease: 5.006
     Dist::Zilla::Plugin::PkgVersion: 5.006
@@ -73,6 +72,7 @@ x_BuiltWith:
     Dist::Zilla::Plugin::ReadmeAnyFromPod: 0.133290
     Dist::Zilla::Plugin::ReadmeFromPod: 0.21
     Dist::Zilla::Plugin::ReportVersions::Tiny: 1.10
+    Dist::Zilla::Plugin::RunExtraTests: 0.016
     Dist::Zilla::Plugin::Test::CPAN::Changes: 0.008
     Dist::Zilla::Plugin::Test::Compile::PerFile: 0.001001
     Dist::Zilla::Plugin::Test::Kwalitee: 2.07
@@ -81,9 +81,10 @@ x_BuiltWith:
     Dist::Zilla::Plugin::TestRelease: 5.006
     Dist::Zilla::Plugin::Twitter: 0.024
     Dist::Zilla::Plugin::UploadToCPAN: 5.006
-    Dist::Zilla::PluginBundle::Author::KENTNL: 2.005000
+    Dist::Zilla::PluginBundle::Author::KENTNL: 2.006001
     Dist::Zilla::PluginBundle::Author::KENTNL::Lite: 1.7.2
-    GraphViz2: 2.22
+    GraphViz2: 2.23
+    GraphViz2::Abstract::Util::Constants: 0.001000
     Module::Build: 0.4203
     Path::Tiny: 0.047
     Pod::Coverage::TrustPod: 0.100003
@@ -95,7 +96,6 @@ x_BuiltWith:
     Test::More: 1.001002
     Test::Pod: 1.48
     Test::Pod::Coverage: 1.08
-    constant: 1.29
     parent: 0.228
     strict: 1.08
     utf8: 1.13
@@ -330,7 +330,7 @@ x_Dist_Zilla:
         Dist::Zilla::Plugin::Prereqs:
           phase: develop
           type: suggests
-      name: '@Author::KENTNL/Prereqs/BundleDevelSuggests'
+      name: '@Author::KENTNL/BundleDevelSuggests'
       version: 5.006
     -
       class: Dist::Zilla::Plugin::Prereqs
@@ -338,12 +338,12 @@ x_Dist_Zilla:
         Dist::Zilla::Plugin::Prereqs:
           phase: develop
           type: requires
-      name: '@Author::KENTNL/Prereqs/BundleDevelRequires'
+      name: '@Author::KENTNL/BundleDevelRequires'
       version: 5.006
     -
-      class: Dist::Zilla::Plugin::Author::KENTNL::MinimumPerl
-      name: '@Author::KENTNL/Author::KENTNL::MinimumPerl'
-      version: 2.005000
+      class: Dist::Zilla::Plugin::MinimumPerl
+      name: '@Author::KENTNL/MinimumPerl'
+      version: 1.003
     -
       class: Dist::Zilla::Plugin::Authority
       name: '@Author::KENTNL/Authority'
@@ -365,8 +365,8 @@ x_Dist_Zilla:
       name: '@Author::KENTNL/Test::CPAN::Changes'
       version: 0.008
     -
-      class: Dist::Zilla::Plugin::CheckExtraTests
-      name: '@Author::KENTNL/CheckExtraTests'
+      class: Dist::Zilla::Plugin::RunExtraTests
+      name: '@Author::KENTNL/RunExtraTests'
       version: 0.016
     -
       class: Dist::Zilla::Plugin::TestRelease
@@ -382,7 +382,7 @@ x_Dist_Zilla:
       version: 2.019
     -
       class: Dist::Zilla::Plugin::Git::Tag
-      name: '@Author::KENTNL/Git::Tag/tag_master'
+      name: '@Author::KENTNL/tag_master'
       version: 2.019
     -
       class: Dist::Zilla::Plugin::Git::Commit
@@ -394,7 +394,7 @@ x_Dist_Zilla:
       version: 2.019
     -
       class: Dist::Zilla::Plugin::Git::Tag
-      name: '@Author::KENTNL/Git::Tag/tag_release'
+      name: '@Author::KENTNL/tag_release'
       version: 2.019
     -
       class: Dist::Zilla::Plugin::UploadToCPAN

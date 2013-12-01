@@ -17,7 +17,7 @@ my %module_build_args = (
     "Kent Fredric <kentfredric\@gmail.com>"
   ],
   "dist_name" => "GraphViz2-Abstract-Node",
-  "dist_version" => "0.001001",
+  "dist_version" => "0.002000",
   "license" => "perl",
   "module_name" => "GraphViz2::Abstract::Node",
   "recommends" => {},
@@ -25,8 +25,8 @@ my %module_build_args = (
   "requires" => {
     "Carp" => 0,
     "Class::Tiny" => 0,
+    "GraphViz2::Abstract::Util::Constants" => 0,
     "Scalar::Util" => 0,
-    "constant" => 0,
     "perl" => "5.014002",
     "strict" => 0,
     "utf8" => 0,
