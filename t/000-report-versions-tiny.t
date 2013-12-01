@@ -51,12 +51,12 @@ sub pmver {
 eval { $v .= pmver('Carp','any version') };
 eval { $v .= pmver('Class::Tiny','any version') };
 eval { $v .= pmver('GraphViz2','any version') };
+eval { $v .= pmver('GraphViz2::Abstract::Util::Constants','any version') };
 eval { $v .= pmver('Module::Build','0.4203') };
 eval { $v .= pmver('Path::Tiny','any version') };
 eval { $v .= pmver('Scalar::Util','any version') };
 eval { $v .= pmver('Test::Fatal','any version') };
 eval { $v .= pmver('Test::More','1.001002') };
-eval { $v .= pmver('constant','any version') };
 eval { $v .= pmver('parent','any version') };
 eval { $v .= pmver('strict','any version') };
 eval { $v .= pmver('utf8','any version') };
