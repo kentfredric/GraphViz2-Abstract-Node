@@ -1,6 +1,10 @@
 Release history for GraphViz2-Abstract-Node
 
-0.002000 2013-12-01T05:01:20Z
+0.002000 2013-12-01T05:44:07Z
+ [Dependencies::Stats]
+ - Dependencies changed, see Changes.deps{,.all,.dev} for details
+ - develop: +2 ↑1 -2
+ - runtime: +1 -1
 
 0.001001 2013-11-30T09:18:32Z
  - Add URL and showboxes fields.

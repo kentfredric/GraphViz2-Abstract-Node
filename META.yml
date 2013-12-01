@@ -81,7 +81,7 @@ x_BuiltWith:
     Dist::Zilla::Plugin::TestRelease: 5.006
     Dist::Zilla::Plugin::Twitter: 0.024
     Dist::Zilla::Plugin::UploadToCPAN: 5.006
-    Dist::Zilla::PluginBundle::Author::KENTNL: 2.6.0
+    Dist::Zilla::PluginBundle::Author::KENTNL: 2.006001
     Dist::Zilla::PluginBundle::Author::KENTNL::Lite: 1.7.2
     GraphViz2: 2.23
     GraphViz2::Abstract::Util::Constants: 0.001000
